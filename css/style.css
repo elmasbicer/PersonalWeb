@@ -1,0 +1,246 @@
+
+*{
+    font-family: cursive;   
+}
+
+body{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #e33592, #e36ab8, #e192d5, #e2b6eb, #e8d7f8, #e7d7f9, #e5d6f9, #e4d6fa, #d7b5f1, #d092e4, #cd6cd1, #cb39b9);  }   
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    height: 30px;
+    position: fixed;
+    aspect-ratio: 2;
+    display: grid;
+    background:
+      radial-gradient(farthest-side,#000 15%,#0000 18%)0 0/50% 100%,
+      radial-gradient(50% 100% at 50% 160%,#fff 95%,#0000) 0 0   /50% 50%,
+      radial-gradient(50% 100% at 50% -60%,#fff 95%,#0000) 0 100%/50% 50%;
+    background-repeat: repeat-x;
+    animation: l2 1.5s infinite linear;
+  }
+  /* @keyframes l2 { Gözün hareket etmesi için
+    0%,
+    15% {background-position:0   0,0 0,0 100%}
+    20%,
+    40% {background-position:5px 0,0 0,0 100%}
+    45%,
+    55% {background-position:0   0,0 0,0 100%}
+    60%,
+    80%{background-position:-5px 0,0 0,0 100%}
+    85%,
+    100% {background-position:0   0,0 0,0 100%}
+  } */
+
+ 
+
+nav{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background: transparent;
+    overflow: hidden;
+
+   }
+   nav .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 90%;
+    background: transparent;
+    margin: auto;
+   }
+   nav .navbar .brand-title a{
+     color: black;
+     font-size: 27px;
+     font-weight: 600;
+     text-decoration: none;
+     transition: all 0.4s ease 0s;
+   }
+
+   nav .navbar .menu{
+     display: flex;
+     margin: 5px;
+   }
+   .navbar .menu li{
+     list-style: none;
+     margin: 0 15px;
+     display: block;
+   }
+   .navbar .menu li a{
+     color: black;
+     font-size: 17px;
+     font-weight: 600;
+     text-decoration: none;
+   }
+
+  
+  .navbar .menu li a:hover{
+    color: whitesmoke;
+    transition: all 1s ease-out;
+  }
+
+  nav .navbar .brand-title a:hover{
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px whitesmoke;
+    -moz-box-shadow: 0px 5px 40px -10px whitesmoke;
+    transition: all 0.3s ease 0s;
+  }
+
+  hr{
+    justify-content: center;
+    border: none;
+    border-top: 1px solid black;
+  }
+
+  .about h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.about h1::after {
+    content: '';
+    background: #10898d;
+    width: 250px;
+    height: 4px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center {
+    text-align: left;
+    margin-top: 150px;
+
+}
+
+.center a{
+  text-decoration: none;
+  color: #222222;
+}
+
+card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:#eae4dd;
+    border-top: 0.1px solid rgb(212, 212, 212);
+    border-bottom: 0.1px solid rgb(212, 212, 212);
+    box-shadow: 0 3px 40px #5c554c; 
+
+}
+
+
+.card-container hr{
+    border: none;
+    border-top: 1px solid #5c554c
+}
+
+.card{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); */
+    box-shadow: 13px 8px 4px #5c554c;
+    backdrop-filter: blur(2px);
+    border-radius: 17px;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+
+  }
+
+  .card img{
+    border-radius: 17px;
+    border: 1px solid #f5f2ee;
+    color: black;
+    width: 300px;
+    height: 300px;
+  }
+
+
+@media (max-width:468px) {
+    .card{
+        width: 110px;
+        height: 110px;
+    }
+    .card img{
+
+        width: 110px;
+        height: 110px;
+      }
+
+    
+}
+
+@media (min-width:469) and (max-width:768px) {
+    .card{
+        width: 120px;
+        height: 120px;
+    }
+    .card img{
+
+        width: 120px;
+        height: 120px;
+      }
+
+    
+}
+
+
+  .project-1{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vr {
+    float: right;
+    border-left: 1px solid gray;
+    height: 100px;
+  }
+
+  .contact-1{
+    float: right;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+
+  .contact-1 h1{
+text-align: right;
+  }
+
+
+
+  .contact-1 a{
+    color:black;
+    text-decoration: none;
+    font-size: 15px;
+    text-align:center;
+    margin-left: 15px;
+    margin-right: 5px;
+    justify-content: space-between  ;
+  }
+
+
+
+
+ 
